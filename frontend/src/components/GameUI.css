@@ -1,0 +1,93 @@
+.game-ui {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  background: rgba(255,255,255,0.85);
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.08);
+  padding: 18px 32px;
+  margin-top: 24px;
+  font-size: 1.1rem;
+  z-index: 10;
+}
+
+.ui-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.ui-label {
+  color: #667eea;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 2px;
+}
+
+.ui-value {
+  color: #333;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.lives {
+  display: flex;
+  gap: 2px;
+}
+
+.life {
+  font-size: 1.2rem;
+  margin: 0 1px;
+}
+
+.ui-controls {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-top: 0;
+}
+
+.ui-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 8px 22px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.08);
+}
+
+.ui-btn:hover {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .game-ui {
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px 8px;
+    font-size: 1rem;
+  }
+  .ui-btn {
+    padding: 7px 14px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .game-ui {
+    padding: 6px 2px;
+    font-size: 0.95rem;
+  }
+  .ui-btn {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+} 
